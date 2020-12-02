@@ -15,7 +15,7 @@ router.get('/taxAdvisory', function (req, res) {
     res.render('taxAdvisory.ejs');
 });
 router.get('/quickBooksCampaign', function (req, res) {
-    res.render('simplepage.ejs');
+    res.render('quickbooksCampaign.ejs');
 });
 /* router.get('/quickBooksCampaign', function (req, res) {
     res.render('quickBooksCampaign.ejs');
