@@ -63,7 +63,7 @@ app.post('/requestForProposal',  (req, res)=> {
 
     var mailOptions = {
         from: 'prospects@asarramofh.com',
-        to: 'ellisotoo@gmail.com, brandexcelnow@gmail.com',
+        to: 'ellisotoo@gmail.com, brandexcelnow@gmail.com, emarfo@asarramofh.com, info@asarramofh.com',
         subject: 'New AsarRamofh Prospect',
         text: `${output}`,
         html: output
