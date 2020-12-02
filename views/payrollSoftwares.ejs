@@ -5,14 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Payroll Softwares</title>
-    <%include partials/headHTML.ejs%>
+    <%- include('partials/headHTML') %>
     <link rel="stylesheet" href="css/productImagesMulti.css">
-
+    
 </head>
 
 <body>
-    <%include partials/header.ejs%>
-
+    <%- include('partials/header')%>	
     <main>
         <section class="banner">
             <div>
@@ -25,7 +24,7 @@
                     <h2>Wallet HR Payroll ®
                     </h2>
                     <p>
-
+                        
                         The Wallet HR Payroll is a great solution for all your Payroll needs. It allows you to process
                         and
                         manage your payroll either from the cloud or from your local server.
@@ -37,48 +36,49 @@
                         <li>Generate all your customized monthly employee income tax returns at a click</li>
                         <li>Generate all your customized monthly Pension reports (SSNIT and Tier 2 contribution reports
                             available for Ghana)</li>
-                        <li>Generate your payroll journal in Microsoft Excel</li>
-                        <li>Generate other customized reports</li>
-
-                    </ul>
-                    <br>
-
-
-                </article>
-                <div>
-                    <img alt="Wallet HR" class="prod" src="img/productImages/WalletHR.jpg" alt="">
+                            <li>Generate your payroll journal in Microsoft Excel</li>
+                            <li>Generate other customized reports</li>
+                            
+                        </ul>
+                        <br>
+                        
+                        
+                    </article>
+                    <div>
+                        <img alt="Wallet HR" class="prod" src="img/productImages/WalletHR.jpg" alt="">
+                    </div>
                 </div>
-            </div>
-            <hr>
-            <div id="quickPayroll">
-                <article>
-                    <h2 style="margin-top: 30px"> Quick Payroll ®
-                    </h2>
-                    <p>
-                        Quick Payroll is customized for specific countries including Ghana.
-                        You can now run your payroll with much ease and comfort and generate Pay slips for all your
-                        staff
-                        from
-                        the Quick Payroll.
-
-                    </p>
-                </article>
-
-
-                <div>
-                    <img class="prod" src="img/productImages/quickPayroll.jpg" alt="">
+                <hr>
+                <div id="quickPayroll">
+                    <article>
+                        <h2 style="margin-top: 30px"> Quick Payroll ®
+                        </h2>
+                        <p>
+                            Quick Payroll is customized for specific countries including Ghana.
+                            You can now run your payroll with much ease and comfort and generate Pay slips for all your
+                            staff
+                            from
+                            the Quick Payroll.
+                            
+                        </p>
+                    </article>
+                    
+                    
+                    <div>
+                        <img class="prod" src="img/productImages/quickPayroll.jpg" alt="">
+                    </div>
+                    
                 </div>
-
-            </div>
-        </section>
-    </main>
-
-    <%include partials/footer.ejs%>
-    <script src="js/nav.js"></script>
-    <script>
-        // document.querySelector('#title').textContent = document.querySelector('#title').textContent.toLocaleLowerCase();
-    </script>
+            </section>
+        </main>
+        
+        <%- include('partials/footer') %>
+        <script src="js/nav.js"></script>
+        <script>
+            // document.querySelector('#title').textContent = document.querySelector('#title').textContent.toLocaleLowerCase();
+            </script>
 </body>
+
 
 
 </html>

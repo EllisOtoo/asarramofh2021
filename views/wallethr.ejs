@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Human Resource Softwares</title>
-    <%include partials/headHTML.ejs%>
+    <%- include('partials/headHTML') %>
+    
+    
 </head>
 
 <body>
-    <%include partials/header.ejs%>
+    <%- include('partials/header')%>	
     <main>
         <section class="banner">
             <div>
@@ -69,7 +71,7 @@
 
     </main>
     <!-- <img src="img/qb.jpg" alt=""> -->
-    <%include partials/footer.ejs%>
+    <%- include('partials/footer') %>
     <script src="js/nav.js"></script>
 </body>
 

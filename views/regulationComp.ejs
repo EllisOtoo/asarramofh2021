@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Regulatory Compliance
     </title>
-    <%include partials/headHTML.ejs%>
+    <%- include('partials/headHTML') %>
+    
     <style>
         .info {
             margin-bottom: 150px;
@@ -16,7 +17,7 @@
 </head>
 
 <body>
-    <%include partials/header.ejs%>
+    <%- include('partials/header')%>	
     <main>
         <section class="banner">
             <div>
@@ -30,7 +31,7 @@
                 agencies
             </p>
             <h2>Services Details: </h2>
-
+            
             <ul>
                 <li>Ghana Investment Promotion Centre</li>
                 <li>Minerals Commission</li>
@@ -38,7 +39,7 @@
                 <li>Energy Commission of Ghana</li>
                 <li> Ghana Immigration Service</li>
                 <li> Ghana Fire Service</li>
-
+                
             </ul>
             <br>
             <br>
@@ -51,12 +52,12 @@
                 <li>Multiple entry visa</li>
                 <li>Visa on arrival</li>
             </ul>
-
+            
         </section>
-
+        
     </main>
-
-    <%include partials/footer.ejs%>
+    
+    <%- include('partials/footer') %>
     <script src="js/nav.js"></script>
 </body>
 

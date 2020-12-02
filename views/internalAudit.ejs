@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Internal Audit and Risk Compliance</title>
-    <%include partials/headHTML.ejs%>
-    <style>
+    <%- include('partials/headHTML') %>
+
+<style>
         main {
             min-height: 100vh;
         }
@@ -14,7 +15,7 @@
 </head>
 
 <body>
-    <%include partials/header.ejs%>
+    <%- include('partials/header')%>	
 
     <main>
         <section class="banner">
@@ -40,7 +41,7 @@
 
     </main>
 
-    <%include partials/footer.ejs%>
+    <%- include('partials/footer') %>    
     <script src="js/nav.js"></script>
     <script>
         // document.querySelector('#title').textContent = document.querySelector('#title').textContent.toLocaleLowerCase();

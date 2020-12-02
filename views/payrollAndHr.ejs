@@ -9,12 +9,10 @@
     <script src="https://kit.fontawesome.com/a08eb5b7e4.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/services.css">
-    <%include partials/headHTML.ejs%>
+    <%- include('partials/headHTML') %>
 </head>
-
 <body>
-
-    <%include partials/header.ejs%>
+    <%- include('partials/header')%>	
     <main>
         <section class="banner">
             <div>
@@ -48,7 +46,7 @@
         </section>
 
     </main>
-    <%include partials/footer.ejs%>
+    <%- include('partials/footer') %>
     <script src="js/nav.js"></script>
 
 </body>

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Business Registration</title>
-    <%include partials/headHTML.ejs%>
+    <%- include('partials/headHTML') %>
     <style>
         .info {
             margin-bottom: 150px;
@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <%include partials/header.ejs%>
+    <%- include('partials/header')%>	
     <main>
         <section class="banner">
             <div>
@@ -57,8 +57,8 @@
 
     </main>
 
-    <%include partials/footer.ejs%>
-    <script src="js/nav.js"></script>
+    <%- include('partials/footer') %>
+        <script src="js/nav.js"></script>
 </body>
 
 </html>
