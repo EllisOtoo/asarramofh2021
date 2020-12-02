@@ -15,5 +15,13 @@
   "bugs": {
     "url": "https://github.com/EllisOtoo/asarramofh2021/issues"
   },
-  "homepage": "https://github.com/EllisOtoo/asarramofh2021#readme"
+  "homepage": "https://github.com/EllisOtoo/asarramofh2021#readme",
+  "dependencies": {
+    "body-parser": "*",
+    "deasync": "*",
+    "ejs": "*",
+    "express": "^4.17.1",
+    "nodemailer": "^6.3.1",
+    "path": "*"
+  }
 }
