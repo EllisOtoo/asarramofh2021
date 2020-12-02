@@ -56,7 +56,7 @@ app.post('/requestForProposal',  (req, res)=> {
             pass: 'asarfocus2020Sucess'
         },
         tls: {
-            rejectUnauthorized: true
+            rejectUnauthorized: false
         }
     });
 
@@ -75,11 +75,12 @@ app.post('/requestForProposal',  (req, res)=> {
             console.log('Email sent: ' + info.response);
         }
     });
-    res.render('quickbooksCampaignSuccess.ejs',
+    res.send('Submission Successful')
+    /* res.render('quickbooksCampaignSuccess.ejs',
     {
         successMsg: 'Mail has been Sent!',
         foo: "bar"
-    } );
+    } ); */
 
     // res.send('Thank you')
 }) 
