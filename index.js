@@ -54,10 +54,10 @@ app.post('/requestForProposal',  (req, res)=> {
         auth: {
             user: 'prospects@asarramofh.com',
             pass: 'asarfocus2020Sucess'
-        } /*,
+        },
         tls: {
-            rejectUnauthorized: false
-        } */
+            rejectUnauthorized: true
+        }
     });
 
 
