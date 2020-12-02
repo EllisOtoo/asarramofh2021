@@ -75,7 +75,7 @@ app.post('/requestForProposal',  (req, res)=> {
             console.log('Email sent: ' + info.response);
         }
     });
-    res.render('index.ejs')
+    res.render('quickbooksCampaign.ejs')
     
     /* res.render('quickbooksCampaignSuccess.ejs',
     {
