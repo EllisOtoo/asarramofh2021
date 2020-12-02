@@ -1,0 +1,30 @@
+/*Styling for for Desktop Info Section  */
+
+@media (min-width: 1024px) {
+    .info ul {
+        margin-left: 20px;
+    }
+
+    .info ul>li {
+        font-size: 13pt;
+    }
+
+    .info p {
+        width: 65vw;
+        /* display: none */
+    }
+
+    .info article>p {
+        width: 45vw;
+        /* display: none */
+    }
+}
+
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+    .info ul {
+        margin-left: 20px;
+    }
+}
