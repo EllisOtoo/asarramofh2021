@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/proposalRequestForm.css">
+    <link rel="stylesheet" href="css/quickbooksCSS.css">
   </head>
   
   <body>
@@ -36,7 +37,7 @@
         <p> We provide after sales support to ensure you have access to continued support beyond the implementation phase.</p>
         <div style="display: flex; justify-content: center;">
           <form  id="firstForm" method="POST" class="login-form" action="/requestForProposal">
-            <h3>Request for Quote</h3>
+            <h3>Request for A Proposal</h3>
             <div class="form-input-material">
               <input type="text" name="Username" placeholder="Name" autocomplete="off" class="form-control-material" required />
               <!-- <label for="username">Name</label> -->
@@ -89,27 +90,7 @@
                 <li>QuickBooks Support</li>
                 <li>Compare QuickBooks vs QuickBooks Online</li>
               </ul>
-              <h3>QuickBooks Version</h3>
-              <ul>
-                <li>QB Desktop</li>
-                <li>QB Online</li>
-                <li>I'm not Sure</li>
-              </ul>
-              <h3>QuickBooks Variant</h3>
-              <ul>
-                <li>QuickBooks UK</li>
-                <li>QuickBooks US</li>
-                <li>QuickBooks Canada</li>
-                <li>QuickBooks Australia</li>
-                <li>I'm not Sure</li>
-              </ul>
-              <h3>QuickBooks Online</h3>
-              <ul>
-                <li>QuickBooks Simple start</li>
-                <li>QuickBooks Plus</li>
-                <li>QuickBooks Advance</li>
-              </ul>
-              
+
             </div>
           </div>
         </div>
@@ -145,7 +126,46 @@
                     <input type="password" name="Email" id="BusinessNameAndLocation03" placeholder="Business name and Location" autocomplete="off" class="form-control-material" required />
                     <!-- <label for="password">Mobile Number</label> -->
                   </div>
-                  
+                  <div class="quickBookVersion"> 
+                    <p >QuickBooks Version:</p>
+                    <input type="radio" name="quickBooksVersion" id="qbDesktopRadio" value="QuickBooks_Desktop"> 
+                    <label for="qbDesktopRadio">QB Desktop</label>
+                    <input type="radio" name="quickBooksVersion" id="qbOnline" value="QuickBooks_Online"> 
+                    <label for="qbOnline">QB Online</label>
+                    <input type="radio" name="quickBooksVersion" id="imNotSure" class="imNotSure02" value="QuickBooks_Not_Sure"> 
+                    <label for="imNotSure">I'm not sure</label>
+                  </div>
+                  <hr style="width: 300px;">
+                  <p style="color: black;" class="variantHeader">QuickBooks Variant:</p> 
+                  <div class="variantInputBox">
+                    <input type="radio" name="quickBooksVariant" id="qbUk" value="QuickBooks_Desktop"> 
+                    <label for="qbUk">QuickBooks UK</label>
+                    <input type="radio" name="quickBooksVariant" id="qbUs" value="QuickBooks_Online"> 
+                    <label for="qbUs">QuickBooks US</label> 
+                    <input type="radio" name="quickBooksVariant" id="qbCanada" value="QuickBooks_Not_Sure"> 
+                    <label for="qbCanada">QuickBooks Canada</label>
+                    <input type="radio" name="quickBooksVariant" id="qbAustralia" value="QuickBooks_Not_Sure"> 
+                    <label id="austraLabel" for="qbAustralia">QuickBooks Australia</label>
+                    <input type="radio" name="quickBooksVariant" class="imNotSure02" value="QuickBooks_Not_Sure"> 
+                    <label for="imNotSure">Im not Sure</label>
+                  </div>
+                  <p style="font-weight: 300" class="qbOnlineHeader"> QuickBooks Online:</p>
+                  <div class="qbOnlineHide">
+                    <input type="radio" name="quickBooksOnline" id="qbUk" value="QuickBooks_Desktop"> 
+                    <label for="qbUk">QuickBooks Simple</label>
+                    <input type="radio" name="quickBooksOnline" id="qbUs" value="QuickBooks_Online"> 
+                    <label for="qbUs">QuickBooks US</label>  <br>
+                    <input type="radio" name="quickBooksOnline" id="qbCanada" value="QuickBooks_Not_Sure"> 
+                    <label for="qbCanada">QuickBooks Canada</label>
+                  </div>
+                  <div class="form-input-material">
+                    <input type="number" name="licenseNumber" placeholder="Number of user licenses required" autocomplete="off" class="form-control-material" required />
+                    <!-- <label for="password">Mobile Number</label> -->
+                  </div>
+                  <div class="form-input-material">
+                    <input type="text" name="AdditionalInformation" placeholder="Additional information" autocomplete="off" class="form-control-material" required />
+                    <!-- <label for="password">Mobile Number</label> -->
+                  </div>
                   <button type="submit" class="btn btn-primary btn-ghost">Request Quote</button>
                 </form>
               </div>
@@ -233,9 +253,11 @@
               </div>
               <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                 <div class="card-body">
-                  The account can be accessed anytime, anywhere once you have internet access.
-                  This version is subscription based, paid monthly or yearly.
-                  QUICKBOOKS Online Options:
+                  QB online is the version of QuickBooks that is stored on the cloud. It is hosted by QuickBooks. 
+The account can be accessed anytime, anywhere once you have internet access.
+This version is subscription based, paid monthly or yearly. <br> <br>
+QUICKBOOKS Online Options:
+
                   <ul style="padding-left: 30px;">
                     <li>QBO Simple Start</li>
                     <li>QBO Plus

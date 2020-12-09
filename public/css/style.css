@@ -18,8 +18,20 @@ ul.main-nav {
 }
 
 .quickBookIntroText {
-  width: 70vw;
+  width: 55vw;
   margin: 30px auto;
+}
+
+.accordion {
+  width: 55vw;
+}
+
+.accordion .card-body {
+  padding: 20px 45px;
+}
+
+.quickBookVersion {
+  color: black;
 }
 
 #requestSuccessMsg {

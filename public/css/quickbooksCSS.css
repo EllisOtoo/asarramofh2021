@@ -1,0 +1,57 @@
+/* .qbVariantHide {
+    display: none;
+} */
+.variantHeader, .variantInputBox {
+  display: none;
+}
+
+.variantHeaderShow {
+  display: block;
+}
+
+.variantInputBox {
+  color: black;
+  display: none;
+  -ms-grid-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* label[for = "qbAustralia"] {
+        // display: ;
+    } */
+}
+
+.variantInputBox input[type="radio"] {
+  margin-right: 5px;
+  margin-top: -5px;
+}
+
+.introParaShow {
+  display: block;
+}
+
+.qbOnlineHide {
+  display: none;
+}
+
+.qbOnlineHeader {
+  margin-top: 10px;
+  display: none;
+}
+
+.qbOnlineShow {
+  display: block;
+}
+
+.qbOnlineHeader, .qbOnlineHide {
+  color: black;
+}
+
+/* #introPara {
+    margin: 0 0;
+    width: 300px;
+} */
+/*# sourceMappingURL=quickbooksCSS.css.map */

@@ -1,6 +1,56 @@
-let toggleOpenButton = document.getElementById('toggleOpen');
-let toggleOpenButton02 = document.getElementById('toggleOpen02');
-let successPara   = document.getElementById ('requestSuccessMsg');
+let toggleOpenButton = document.getElementById('toggleOpen'),
+toggleOpenButton02 = document.getElementById('toggleOpen02'),
+successPara   = document.getElementById ('requestSuccessMsg'),
+
+qbDesktopRadio = document.getElementById ('qbDesktopRadio'),
+variantDiv = document.getElementsByClassName ('variantInputBox')[0], 
+variantHeader = document.getElementsByClassName('variantHeader')[0],
+
+qbOnline = document.getElementById ('qbOnline'),
+qbOnlineDiv = document.getElementsByClassName('qbOnlineHide')[0]
+qbOnlineHeader = document.getElementsByClassName('qbOnlineHeader')[0],
+imNotSure02 = document.getElementsByClassName('imNotSure02')[0],
+
+secondForm =document.getElementById('requestForQuote');
+
+qbDesktopRadio.addEventListener ('click', ()=>{
+    if ( (window.getComputedStyle(variantDiv, null).display == 'none')) {
+        variantDiv.style.display = 'grid'
+        variantHeader.style.display = 'block'
+    } else {
+        variantDiv.style.display = 'none'
+        variantHeader.style.display = 'none'
+    }
+    /* variantDiv.classList.toggle ('variantInputBoxShow')
+    variantHeader.classList.toggle ('variantHeaderShow') */
+})
+
+qbOnline.addEventListener ('click', ()=>{
+    
+    if( (window.getComputedStyle(qbOnlineHeader, null).display == 'none')  &&  (window.getComputedStyle(qbOnlineDiv, null).display == 'none')  ) {
+        qbOnlineHeader.style.display = 'block'
+        qbOnlineDiv.style.display = 'block'
+    } else {
+        qbOnlineHeader.style.display = 'none'
+        qbOnlineDiv.style.display = 'none'
+    }
+
+})
+
+
+imNotSure02.addEventListener ('click', ()=>{
+    if (window.getComputedStyle(qbOnlineHeader, null).display == 'block')  {
+        qbOnlineHeader.style.display = 'none';
+        qbOnlineDiv.style.display = 'none';
+    }
+    if (window.getComputedStyle(variantDiv, null).display == 'grid')  {
+        variantHeader.style.display = 'none';
+        variantDiv.style.display = 'none';
+    }
+}) 
+
+//* CheckBox Js
+
 
 
 toggleOpenButton.addEventListener('click',  ()=>  {
@@ -10,7 +60,7 @@ toggleOpenButton.addEventListener('click',  ()=>  {
     
     console.log ('hello')
    /*  setTimeout(()=> { //*Applies after 3s
-        formDiv.classList.toggle("addPaddingToForm")
+        for}mDiv.classList.toggle("addPaddingToForm")
     }, 3000) */
 }
 )
@@ -42,3 +92,5 @@ if(requestSuccessMsg) {
 
 let sillyString = "Ellis "
 console.log (sillyString.length);
+
+
