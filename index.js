@@ -52,8 +52,8 @@ app.post('/requestForProposal',  (req, res)=> {
         port: 465,
         secure: true,
         auth: {
-            user: 'prospects@asarramofh.com',
-            pass: 'asarfocus2020Sucess'
+            user: null,
+            pass: null
         },
         tls: {
             rejectUnauthorized: false
@@ -103,7 +103,7 @@ function handleMailRequest(req, res) {
         port: 465,
         secure: true,
         auth: {
-            user: 'ellisotoo@gmail.com',
+            user: 'ellisotoo@a.com',
             pass: 'Thinkglobal1a2'
         }
     });

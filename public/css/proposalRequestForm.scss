@@ -27,6 +27,9 @@
   #twoFormsBoxes {
     display:flex;
     justify-content: space-around;
+    align-items: flex-start;
+    align-content: flex-start;
+    // display: none;
   }
 
    #secondForm {
