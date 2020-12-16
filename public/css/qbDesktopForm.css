@@ -1,14 +1,35 @@
+body {
+  height: 1000px;
+}
+
+.simpleForm {
+  background-color: #53b700;
+  padding: 30px 20px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: 120px;
+  -webkit-transition: height 0.4s;
+  transition: height 0.4s;
+  border-radius: 5px;
+  margin: 10px 20px;
+}
+
+.simpleForm_height_grow {
+  height: 150px;
+}
+
 .transitionBox {
-  min-height: 1.5em;
+  height: 1.5em;
   width: 200px;
   background-color: #30a8ee;
   margin-bottom: 200px;
-  -webkit-transition: min-height 1s ease-out;
-  transition: min-height 1s ease-out;
+  -webkit-transition: height 1s ease-out;
+  transition: height 1s ease-out;
 }
 
-.transitionBox:hover {
-  min-height: 200px;
+.transitionBox_height {
+  height: 300px;
 }
 
 .addMargin {
@@ -29,8 +50,6 @@
       -ms-flex-align: center;
           align-items: center;
   margin: 10px 10px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 p#callButton:hover, #proposalButton, #quoteButton {
@@ -66,7 +85,7 @@ p#callButton:hover, #proposalButton, #quoteButton {
 .toggleOpen:hover, .toggleOpen02:hover {
   background-size: 20px 2px, 0 2px, 100% 2px;
   /* background-position: calc(100% + 20px) 100%, 100% 100%, 0 100%;
-*/
+ */
 }
 
 #twoFormsBoxes {
@@ -80,15 +99,6 @@ p#callButton:hover, #proposalButton, #quoteButton {
           align-items: flex-start;
   -ms-flex-line-pack: start;
       align-content: flex-start;
-}
-
-#secondForm {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .accordion {
@@ -145,12 +155,12 @@ p#callButton:hover, #proposalButton, #quoteButton {
 }
 
 .form-input-material input {
-  width: 95%;
+  width: 100%;
   color: auto;
 }
 
-.login-form {
-  width: 450px;
+.first-login-form {
+  width: 480px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -165,13 +175,64 @@ p#callButton:hover, #proposalButton, #quoteButton {
   color: white !important;
   background: rgba(145, 145, 145, 0.8);
   border-radius: 10px !important;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0 0.4px 0.4px rgba(128, 128, 128, 0.109), 0 1px 1px rgba(128, 128, 128, 0.155), 0 2.1px 2.1px rgba(128, 128, 128, 0.195), 0 4.4px 4.4px rgba(128, 128, 128, 0.241), 0 12px 12px rgba(128, 128, 128, 0.35);
+          box-shadow: 0 0.4px 0.4px rgba(128, 128, 128, 0.109), 0 1px 1px rgba(128, 128, 128, 0.155), 0 2.1px 2.1px rgba(128, 128, 128, 0.195), 0 4.4px 4.4px rgba(128, 128, 128, 0.241), 0 12px 12px rgba(128, 128, 128, 0.35);
+}
+
+.first-login-form h3 {
+  margin: 0 0 24px 0;
+  color: #333333;
+}
+
+.first-login-form .form-input-material {
+  margin: 12px 0;
+}
+
+.first-login-form .form-input-material input {
+  border: none !important;
+  border-radius: 70px;
+  border-color: none !important;
+  padding: 7px 20px;
+}
+
+.first-login-form .btn {
+  width: 100%;
+  margin: 18px 0 9px 0;
+  background: #53b700;
+  border-radius: 50px;
+  border: none;
+}
+
+.login-form {
+  -webkit-transition: height 0.1s ease-out;
+  transition: height 0.1s ease-out;
+  height: 530px;
+  width: 480px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  padding: 50px 40px;
+  color: #333333 !important;
+  background: rgba(145, 145, 145, 0.8);
+  border-radius: 10px !important;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   -webkit-box-shadow: 0 0.4px 0.4px rgba(128, 128, 128, 0.109), 0 1px 1px rgba(128, 128, 128, 0.155), 0 2.1px 2.1px rgba(128, 128, 128, 0.195), 0 4.4px 4.4px rgba(128, 128, 128, 0.241), 0 12px 12px rgba(128, 128, 128, 0.35);
           box-shadow: 0 0.4px 0.4px rgba(128, 128, 128, 0.109), 0 1px 1px rgba(128, 128, 128, 0.155), 0 2.1px 2.1px rgba(128, 128, 128, 0.195), 0 4.4px 4.4px rgba(128, 128, 128, 0.241), 0 12px 12px rgba(128, 128, 128, 0.35);
 }
 
 .login-form h3 {
   margin: 0 0 24px 0;
-  color: white;
+  color: #333333 !important;
 }
 
 .login-form .form-input-material {
@@ -191,13 +252,11 @@ p#callButton:hover, #proposalButton, #quoteButton {
   background: #53b700;
   border-radius: 50px;
   border: none;
-  /* &:active { 
-      } */
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   .login-form {
-    width: 90%;
+    width: 100%;
   }
 }
 
@@ -205,23 +264,8 @@ p#callButton:hover, #proposalButton, #quoteButton {
   margin-top: 30px;
 }
 
+#secondForm
 #requestForProposalDiv {
   margin-bottom: 30px;
 }
-
-.formDiv {
-  height: 0px;
-  overflow: hidden;
-}
-
-.openForm {
-  /* height: 400px; */
-  height: 600px;
-  -webkit-transition: height 0.5s ease-in;
-  transition: height 0.5s ease-in;
-}
-
-.toggleOpen {
-  margin-top: 20px;
-}
-/*# sourceMappingURL=proposalRequestForm.css.map */
+/*# sourceMappingURL=qbDesktopForm.css.map */

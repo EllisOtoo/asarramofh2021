@@ -36,7 +36,13 @@ ul.main-nav {
     margin: 30px auto;
 }
 
-
+#qbLogoHeader { 
+    // justify-self: flex-end !important;
+    position: absolute;
+    top: 20px;
+    right: 120px;
+    transform: scale(1.5);
+}
 
 .accordion {
     width: 55vw;
@@ -112,6 +118,8 @@ main {
     width: 100vw;
     padding-bottom: 8px;
     z-index: 100;
+    // display: flex;
+    // justify-content: space-around;
 }
 
 header {
@@ -433,14 +441,14 @@ header {
 .burger {
 
     position: absolute;
-    right: 20px;
-    top: 10px;
+    right: 30px;
+    top: 17px;
 
     // background: $secondary-color;
 
     .line {
         width: 30px;
-        height: 5px;
+        height: 4px;
         margin-bottom: 3px;
         background: $primary-color
     }
