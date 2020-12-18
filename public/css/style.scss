@@ -1,5 +1,4 @@
 //* MOBILE SPECIFIC CSS
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -29,7 +28,7 @@ ul.main-nav {
     width: 100vw;
     height: 40vh;
     display: flex;
-    // justify-content: flex-end;
+    justify-content: flex-end;
     background-color: rgb(233, 233, 233);
 
     margin-left: 0 !important;
@@ -43,8 +42,9 @@ ul.main-nav {
         font-family: "Montserrat", sans-serif;
         color:white;
         padding-left: 20px;
-        position: absolute;
-        right: 300px;
+        position: relative;
+        right: 355px;
+        top: 25px;
 
        /*  position: relative;
         left: 200px; */
@@ -108,6 +108,15 @@ ul.main-nav {
 
     #quickBooks2021{ 
         right: 65px !important;
+        position: relative;
+        right: 0 !important;
+        top: 20px !important;
+    }
+
+    #heroImage {
+        justify-content: center;
+        align-items: flex-end !important;
+
     }
 }
 
