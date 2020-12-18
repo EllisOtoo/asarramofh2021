@@ -56,6 +56,10 @@ p#callButton:hover, #proposalButton, #quoteButton {
   cursor: pointer;
 }
 
+#firstForm {
+  margin-top: 60px;
+}
+
 .options {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -157,6 +161,12 @@ p#callButton:hover, #proposalButton, #quoteButton {
 .form-input-material input {
   width: 100%;
   color: auto;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .first-login-form {
+    width: 80vw;
+  }
 }
 
 .first-login-form {

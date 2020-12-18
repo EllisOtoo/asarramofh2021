@@ -19,36 +19,47 @@ ul.main-nav {
     justify-content: space-between
 }
 
+#headerSVG {
+        height: 37vh;
+
+}
+
 //*  NEW QUICKBOOKS PAGE CSS::
 #heroImage {
     width: 100vw;
-    height: 45vh;
+    height: 40vh;
+    display: flex;
+    // justify-content: flex-end;
     background-color: rgb(233, 233, 233);
-    // background-image: url('../img/homepage-banner.png');
-    top: 10px; 
+
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+
+
     #quickBooks2021{
         height: 270px;
-        width: 274px;
+        width: 250px;
         background: linear-gradient(225.32deg,#00c1bf,#53b700);
         font-family: "Montserrat", sans-serif;
         color:white;
         padding-left: 20px;
-        position: relative;
-        left: 200px;
+        position: absolute;
+        right: 300px;
+
+       /*  position: relative;
+        left: 200px; */
        
-       
-       /*  span:first-child {
-    }
-    */       #qbText {
+      #qbText {
         display: block;
         margin-top: 100px;
         font-size: 2em;
  }
 
+ 
         #larger {
             font-size: 5.8em;
             display: block;
-            margin-top: -60px;
+            margin-top: -62px;
             
         }
         
@@ -56,7 +67,7 @@ ul.main-nav {
         #available {
             font-size: 2.7em;
             display: block;
-            margin-right: 55px;
+            margin-right: 35px;
             margin-top: -40px;
             text-align: right;
             font-size: 16pt;
@@ -80,7 +91,24 @@ ul.main-nav {
 
 .quickBookIntroText {
     width: 55vw;
-    margin: 30px auto;
+    margin: 60px auto;
+}
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .quickBookIntroText {
+        width: 80vw;
+        margin: 60px auto;
+    }
+
+    .accordion {
+        width: 90vw !important;
+    }    
+
+
+    #quickBooks2021{ 
+        right: 65px !important;
+    }
 }
 
 #qbLogoHeader { 
