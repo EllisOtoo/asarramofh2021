@@ -165,12 +165,12 @@ p#callButton:hover, #proposalButton, #quoteButton {
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   .first-login-form {
-    width: 80vw;
+    width: 85vw;
   }
 }
 
 .first-login-form {
-  width: 480px;
+  width: 450px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -219,7 +219,7 @@ p#callButton:hover, #proposalButton, #quoteButton {
   -webkit-transition: height 0.1s ease-out;
   transition: height 0.1s ease-out;
   height: 530px;
-  width: 480px;
+  width: 450px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

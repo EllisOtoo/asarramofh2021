@@ -168,11 +168,11 @@ cursor: pointer;
 
   @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     .first-login-form{
-      width: 80vw;}
+      width: 85vw;}
   }
 
   .first-login-form{
-    width: 480px;
+    width: 450px;
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -215,7 +215,7 @@ cursor: pointer;
   .login-form {
     transition: height 0.1s ease-out;
     height: 530px ;
-    width: 480px;
+    width: 450px;
     display: flex;
     flex-direction: column;
     align-items: left;
